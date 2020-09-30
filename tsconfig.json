@@ -1,20 +1,14 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+/*my own tsconfig file for this project*/
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
-  }
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist/js",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
 }
